@@ -1,0 +1,18 @@
+
+
+#menu__toggle{
+    display:none;
+}
+
+
+@media screen and (max-width:480px){
+    #menu__toggle{
+        display: block;
+    }
+    #menu__nav{
+        display: none;
+    }
+    #menu__nav.show-small{
+        display: block;
+    }
+}

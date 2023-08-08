@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Health For All</title>
 </head>
 <body>
     <header>
         <h2>LOGO</h2>
-        <nav>
-            <ul>
+        <nav id="menu">
+            <a href="javascript:void(0);" class="icon" id="menu__toggle" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="menu__nav">
                 <li><a href="appointments.html">Appointments</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="ourteam.html">Our Team</a></li>
