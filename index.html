@@ -9,44 +9,54 @@
     <title>Health For All</title>
 </head>
 <body>
-    <header>
-        <h2 class="top_nav">LOGO</h2>
+    <header class="top_nav">
+        <h2>LOGO</h2>
         <nav id="menu">
             <a href="javascript:void(0);" class="icon" id="menu__toggle" onclick="toggleMenu()">
                 <i class="fa fa-bars"></i>
             </a>
-            <ul id="menu__nav">
-                <li><a href="appointments.html">Appointments</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="ourteam.html">Our Team</a></li>
-                <li><a href="ourpartnership.html">Our Partnership</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-                <li><a href="settings.html">Settings</a></li>
-            </ul>
+            <div id="menu_Container">
+                <ul id="menu__nav">
+                    <li><a href="appointments.html">Appointments</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="ourteam.html">Our Team</a></li>
+                    <li><a href="ourpartnership.html">Our Partnership</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
+    <main id="main">
         <div class="intro">
-            <img src="./img/mainphoto.png" alt="background photo">
-            <h1 class="headingone">Health for
-            <span class="headingone_secondline">All Partnership</span> </h1>
+            <div id="intro__imgContainer">
+                <img src="./img/mainphoto.png" alt="background photo" id="intro__imgContainer_img">
+            </div>
+            <h1 class="headingone">
+                <span>Health for</span>
+                <span class="headingone_secondline">All Partnership</span>
+            </h1>
             <p>Health for All Partnership is a nursing student-led, faculty-supervised health clinic. 
                 We seek to bridge the gap between health care and social services for clients otherwise at risk of falling through the cracks.
                 Our clinics are focused on providing primary health care, mental health support, health education, 
                 and advocacy; as adapted to meet the community needs of each partner site.</p>
-            <a href="appointments.html">Appointments</a>
+            <div class="button_container">
+                <a href="appointments.html" class="button">Appointments</a>
+            </div>
         </div>
         <div class="translator">
-            <h2 class="headingtwo">We have introduced new feature: <a href="translator.html">
+            <h2 class="heading">We have introduced new feature: <a href="translator.html">
                 <span class="headingtwo_secondline">Voice Translator</span></a></h2>
             <p>Our language interpretation services are here to help facilitate communication with patients and families in need of assistance. 
                 We want every patient to effectively understand the information they are provided with. 
                 Our patients can input their queries by text, voice message or video.</p>
-            <a href="translator.html">Translator</a>
+            <div class="button_container">
+                <a href="translator.html" class="button">Translator</a>
+            </div>
         </div>
         <div class="ourTeam">
-            <h2 class="headingthree">Our Team</h2>
+            <h2 class="heading">Our Team</h2>
             <p>Our language interpretation services are here to help facilitate communication with patients and families in need of assistance.</p>
             <div class="ourTeam__intro">
                 <img src="./img/team.png">
@@ -56,7 +66,7 @@
             </div>
         </div>
         <div class="ourPartnership">
-            <h2 class="headingfour">Our Partnership</h2>
+            <h2 class="heading">Our Partnership</h2>
             <p>Our language interpretation services are here to help facilitate communication with patients and families in need of assistance.</p>
             <div class="ourPartnership__intro">
                 <img src="./img/stFrancis.png">
@@ -66,10 +76,10 @@
             </div>
         </div>
         <div class="Subscription">
-            <h2 class="headingfive">Subscribe to our newsletter</h2>
-            <form action="#" method="POST">
+            <h2 class="heading">Subscribe to our newsletter</h2>
+            <form action="#" method="POST" id="form">
                 <input type="text" id="email" name="email" placeholder="Enter your email">
-                <input type="submit" value="Subscribe">
+                <input type="submit" value="Subscribe" id="Subscribe__button">
             </form>
         </div>
     </main>
